@@ -124,7 +124,7 @@ function buildLayout(urls, inputCount, message) {
 }
 
 // ===== 메인 핸들러 =====
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   // CORS 허용
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
